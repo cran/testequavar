@@ -1,0 +1,10 @@
+47b028d6b11c3464e18cb02aa52970b4 *DESCRIPTION
+9cfd8b356e72e3962e555bbc663357be *NAMESPACE
+fac572fed450dd6235058d7c0f9c6f18 *R/equal2var.R
+8ea17d6b8beec0a24f24d43916b077a1 *R/equal3var.R
+2a543bec2dd8ef2d40003ad461087682 *R/equal4var.R
+4f23b55cb986cf324457ddccf798f634 *R/testequavar.R
+b369956c3196ac9b6e28f3ae46795230 *man/equa2vartest.Rd
+4c2c534263cedf024f6b5aff4c18b074 *man/equa3vartest.Rd
+eb119ebea9441e02810ae8aecf12ec47 *man/equa4vartest.Rd
+c25677a07335dd674f6efbe9326f98f9 *man/testequavar.Rd
