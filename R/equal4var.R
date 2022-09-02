@@ -13,14 +13,14 @@
 #'
 #'
 #'
-#' @return list consisting of a non-numeric decision whether to reject the null hypothesis or not, the significance level, and the number of bootstrap samples used
+#' @return list consisting of a non-numeric decision whether to reject the null hypothesis or not, the significance level, the number of bootstrap samples used, and the bootstrap P-value  calculated using the Euclidean distance.  
 #'
 #'
 #'
 #' @references
 #'
 #' Cahoy, DO (2010), \emph{A Bootstrap Test For Equality Of Variances,} Computational Statistics & Data Analysis, 54(10), 2306-2316.
-#' \url{https://doi.org/10.1016/j.csda.2010.04.012}
+#' <doi:10.1016/j.csda.2010.04.012>
 #'
 #'
 #'
@@ -120,6 +120,10 @@ equa4vartest=function(x1, x2, x3, x4, a, B){
   cval<- ys[r]
   ts2<- c( (yy1/sqrt(vary1c)),(yy2/sqrt(vary2c)),(yy3/sqrt(vary3c)),(yy4/sqrt(vary4c)) )
   ind<- ifelse( sum( ifelse( ( abs(ts2) > rep( cval ,(k+1) ) ), 1, 0)    ) >0,1,0 )
-  return(list(ifelse(ind==0,"Decision: Fail to Reject the Null", "Decision: Reject the Null"), Alpha=a, NumberOfBootSamples=B ) )
+  euclid <- function(a) sqrt(sum((a)^2))
+  dum=apply(y,1,euclid) 
+  dum2=euclid(ts2)
+  pval<-round((sum(dum>dum2)+1)/B1,3)
+  return(list(ifelse(ind==0,"Decision: Fail to Reject the Null", "Decision: Reject the Null"),  Alpha=a, NumberOfBootSamples=B, BootPvalue=pval ) )
 }
 

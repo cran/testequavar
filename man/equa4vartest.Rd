@@ -20,7 +20,7 @@ equa4vartest(x1, x2, x3, x4, a, B)
 \item{B}{number of bootstrap samples. At least 500 is recommended.}
 }
 \value{
-list consisting of a non-numeric decision whether to reject the null hypothesis or not, the significance level, and the number of bootstrap samples used
+list consisting of a non-numeric decision whether to reject the null hypothesis or not, the significance level, the number of bootstrap samples used, and the bootstrap P-value  calculated using the Euclidean distance.
 }
 \description{
 Testing equality of four (4) population variances against the alternative that all variances are not equal.
@@ -43,5 +43,5 @@ equa4vartest(rexp(10) ,rexp(10) ,rexp(10) , rexp(10),  a=0.01, B=1000)
 }
 \references{
 Cahoy, DO (2010), \emph{A Bootstrap Test For Equality Of Variances,} Computational Statistics & Data Analysis, 54(10), 2306-2316.
-\url{https://doi.org/10.1016/j.csda.2010.04.012}
+<doi:10.1016/j.csda.2010.04.012>
 }
