@@ -3,6 +3,7 @@
 \docType{package}
 \name{testequavar}
 \alias{testequavar}
+\alias{testequavar-package}
 \title{testequavar Package}
 \description{
 Tests the hypothesis  that 2, 3, or 4 population variances are homogeneous or not using bootstrap.
@@ -10,8 +11,8 @@ Tests the hypothesis  that 2, 3, or 4 population variances are homogeneous or no
 \details{
 Reference:
 
-Cahoy (2010) <doi:10.1016/j.csda.2010.04.012>
+Cahoy (2010) \doi{10.1016/j.csda.2010.04.012}
 }
 \author{
-Dexter Cahoy \email{cahoyd@uhd.edu}
+Dexter Cahoy \email{dexter.cahoy@gmail.com}
 }

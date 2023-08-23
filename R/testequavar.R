@@ -5,13 +5,15 @@
 #'
 #' Reference:
 #'
-#' Cahoy (2010) <doi:10.1016/j.csda.2010.04.012>
+#' Cahoy (2010) \doi{10.1016/j.csda.2010.04.012}
 #'
 #'
 #'
 #' @docType package
 #'
-#' @author Dexter Cahoy \email{cahoyd@uhd.edu}
+#' @author Dexter Cahoy \email{dexter.cahoy@gmail.com}
 #'
 #' @name testequavar
+#' 
+#' @aliases testequavar-package
 NULL
