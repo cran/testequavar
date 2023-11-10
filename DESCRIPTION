@@ -1,7 +1,7 @@
 Package: testequavar
 Type: Package
 Title: Bootstrap Tests for Equality of 2, 3, or 4 Population Variances
-Version: 0.1.4
+Version: 0.1.5
 Author: Dexter Cahoy
 Maintainer: Dexter Cahoy <dexter.cahoy@gmail.com>
 Description: Tests the hypothesis  that variances are homogeneous or not using bootstrap. The procedure uses a variance-based statistic, and is derived from a normal-theory test.
@@ -11,6 +11,6 @@ Encoding: UTF-8
 Imports: stats
 RoxygenNote: 7.2.3
 NeedsCompilation: no
-Packaged: 2023-08-23 02:21:30 UTC; cahoyd
+Packaged: 2023-11-10 20:57:08 UTC; cahoyd
 Repository: CRAN
-Date/Publication: 2023-08-23 03:40:02 UTC
+Date/Publication: 2023-11-10 23:40:02 UTC

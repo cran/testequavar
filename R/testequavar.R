@@ -14,6 +14,4 @@
 #' @author Dexter Cahoy \email{dexter.cahoy@gmail.com}
 #'
 #' @name testequavar
-#' 
-#' @aliases testequavar-package
 NULL
